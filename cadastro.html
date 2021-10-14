@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt_br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./estilo.css/style.css">
+    <title>Flor com Amor :: Cadastro</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/logo/favicon-16x16.png">
+    <link rel="manifest" href="/img/logo/site.webmanifest">
+    <link rel="mask-icon" href="/img/logo/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/logo/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/logo/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body style="min-width:372px;">
+
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow-sm mb-5 ">
+        <div class="container ">
+            <a class="navbar-brand" href=" "><strong>Flor com Amor</strong></a>
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target=".navbar-collapse"> 
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse ">
+                <ul class="navbar-nav flex-grow-1 ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="/index.html ">Home</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="/contato.html ">contatos</a>
+                    </li>
+                </ul>
+
+                <div class="align-self-end ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="/cadastro.html ">Quero me cadastrar</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="/login.html ">Login</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="/carrinho.html " class="nav-link text-white ">
+                                <svg class="bi " width="24 " height="24 " fill="currentColor ">
+                                <use xlink:href="/bi.svg#cart3 "/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Informe seus Dados</h1>
+            <hr>
+            <form id="form-contat">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6" id="form-contat">
+                        <fieldset class="row">
+                            <legend>Dados pessoais</legend>
+                            <div class="mb-3">
+                                <label for="txtnome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="txtnome">
+                            </div>
+
+                            <div class="col-md-6 col-xl-4 mb-3">
+                                <label for="txtCPF" class="form-label">CPF</label>
+                                <span class="form-text"></span>
+                                <input type="text" class="form-control" placeholder="Somente numeros" id="txtCPF">
+                            </div>
+
+                            <div class="col-md-6 col-xl-4 mb-3">
+                                <label for="txtDataNascimento" class="form-label">Data de nascimento</label>
+                                <input type="date" class="form-control" id="txtDataNascimento">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Contatos</legend>
+                            <div class="col-md-8 mb-3">
+                                <label for="txtEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="txtEmail">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="txtTelefone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" placeholder="com DDD, somente numeros" id="txtTelefone">
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6" id="form-contat">
+                        <fieldset class="row">
+                            <legend>Endereço</legend>
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <label for="txtCEP" class="form-label">CEP</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="textCEP">
+                                    <span class="input-group-text p-1">
+                                        <svg class="bi" width="24" height="24" fill="currentColor">
+                                            <use xlink:href="/bi.svg#hourglass-split" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-8  align-self-end ">
+                                <textarea class="form-control text-muted bg-light" style="height: 68px;"> Digite seu CEP para buscarmos o endereço.</textarea>
+                            </div>
+
+                            <div class="mb-3 col-md-4">
+                                <label for="txtNumero" class="form-label">Numero</label>
+                                <input type="text" class="form-control" id="txtNumero">
+                            </div>
+
+                            <div class="mb-3 col-md-8">
+                                <label for="txtComplemento" class="form-label">Complemento</label>
+                                <input type="text" class="form-control" id="txtComplemento">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="txtReferencia" class="form-label">Referencia</label>
+                                <input type="text" class="form-control" id="txtReferencia">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend> Senha de Acesso</legend>
+                            <div class="mb-3">
+                                <label for="txtSenha" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="txtSenha">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="txtConfSenha" class="form-label">Confirmação da Senha</label>
+                                <input type="password" class="form-control" id="txtConfSenha">
+                            </div>
+                        </fieldset>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="form-check mb-3" id="form-contat">
+                    <input type="checkbox" class="form-check-input" value="" id="chkPromocoes">
+                    <label for="chkPromocos" class="form-check-label"> Desejo receber informações sobre promoçoes</label>
+                </div>
+                <div class="mb-3" id="form-contat">
+                    <a class="btn btn-light btn-outline-dark" href="/index.html">cancelar</a>
+                    <input type="button" value="Criar meu cadastro" class="btn btn-warning" onclick="window.location.href='/confirmcadastro.html'">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div style="height: 273px;" class="d-block d-md-none"></div>
+    <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+    <div style="height: 129px;" class="d-none d-lg-block"></div>
+
+    <footer class="border-top text-light bg-dark  ">
+        <div class="container ">
+            <div class="row py-3 ">
+                <div class="col-12 col-md-4 text-center text-md-left ">
+                    ©2020 - Flor com Amor ltda ME <br> Rua virtual inexistente, nª938, Mogi das cruzes-sp<br> CNPJ 99.999.999/0001-99
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/privacidade.html " target="_blank " class=" text-decoration-none text-light ">politica de privacidade</a><br>
+
+                    <a href="/termos.html " target="_blank " class="text-decoration-none text-light ">Termos de uso</a><br>
+
+                    <a href="/quemsomos.html " target="_blank " class="text-decoration-none text-light ">quem somos</a><br>
+
+                    <a href="/trocas.html " target="_blank " class="text-decoration-none text-light ">Trocas e Devoluções</a>
+                </div>
+
+
+                <div class="col-12 col-md-4 text-center text-md-right ">
+                    <a href="/contato.html " target="_blank " class="text-decoration-none text-light"> contato pelo site</a><br> Email: <a href="email.email@gmail.com " class="text-decoration-none text-light
+    ">email.email@gmail.com</a><br> telefone: <a href="phone:99999-9999 " class="text-decoration-none text-light">(11) 99999-9999</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

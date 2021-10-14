@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/node_modules/index.html# -->
+<html lang="pt_br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Flor_com_Amor_files/bootstrap.css">
+    <link rel="stylesheet" href="./estilo.css/style.css">
+    <title>Flor com Amor</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/logo/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style class="__css_exfil_protection_filtered_styles"></style>
+</head>
+
+<body style="min-width:372px;">
+
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow-sm mb-5 fixed-top ">
+        <div class="container ">
+            <a class="navbar-brand" href=" "><strong>Flor com Amor</strong></a>
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target=".navbar-collapse"> 
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse ">
+                <ul class="navbar-nav flex-grow-1 ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="/index.html ">Home</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="/contato.html ">contatos</a>
+                    </li>
+                </ul>
+
+                <div class="align-self-end ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="/cadastro.html ">quero me cadastrar</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="/login.html ">Login</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="/carrinho.html " class="nav-link text-white ">
+                                <svg class="bi " width="24 " height="24 " fill="currentColor ">
+                                <use xlink:href="/bi.svg#cart3 "/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container ">
+        <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/slides/carrosel 2.jpg" class="d-block w-100" alt="slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/slides/carrosel 2.jpg" class="d-block w-100" alt="slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/slides/carrosel 2.jpg" class="d-block w-100" alt="slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev btn-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btn-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr class="mt-3 ">
+    </header>
+
+    <main>
+        <div class="mb-5 pb-5 mb-md-0 ">
+            <div class="container ">
+                <!--produtos-->
+                <div class="row ">
+                    <div class="col-12 col-md-5 ">
+                        <form class="justify-content-center justify-content-md-start mb-3 mb-md-0 ">
+                            <div class="input-group input-group-sm ">
+                                <input type="text " class="form-control " placeholder="Digite o que procura ">
+                                <button class="btn btn-dark ">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--campo de procura end-->
+
+                    <!--campo de navegação e filtros-->
+                    <div class="col-12 col-md-7 ">
+                        <div class="d-flex d-flex-row-reverse justify-content-center justify-content-md-end ">
+                            <form class="ml-3 d-inline-block ">
+                                <select class="form-select form-select-sm ">
+                                <option>ordenar pelo nome</option>
+                                <option>ordenar pelo menor preço</option>
+                                <option>ordenar pelo maior preço</option>
+                            </select>
+                            </form>
+
+                            <nav class="d-inline-block ">
+                                <ul class="pagination pagination-sm my-0 ">
+                                    <li class="page-item ">
+                                        <button class="page-link ">1</button>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <button class="page-link ">2</button>
+                                    </li>
+
+                                    <li class="page-item disabled ">
+                                        <button class="page-link ">3</button>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <button class="page-link ">4</button>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <button class="page-link ">5</button>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <button class="page-link ">6</button>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <!--campo de navegação e filtros end-->
+                </div>
+                <hr class="mt-3 ">
+                <div class="row g-3 ">
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 1.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 2.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch ">
+                        <div class="card text-center bg-light ">
+                            <a href="http://127.0.0.1:5500/node_modules/index.html " class="position-absolute right-0 p-2 text-danger ">
+                                <svg class="bi " width="24 " height="24 " fill="courrentColor ">
+                                <use xlink:href="/bi.svg#suit-heart "></use>
+                            </svg>
+                            </a>
+                            <a href="/produto.html ">
+                                <img src="./img/produtos/produto 3.jpg " class="card-img-top " alt="Banana ">
+                            </a>
+                            <div class="card-header ">
+                                R$ 44,50
+                            </div>
+
+                            <div class="card-body ">
+                                <h5 class="card-title ">Nome da Flor</h5>
+                                <p class="card-text truncate-3l ">
+                                    Flores da melhor qualidade direto do produtor pra sua mesa.
+                                </p>
+                            </div>
+
+                            <div class="card-footer ">
+                                <form class="d-block ">
+                                    <button class="btn btn-dark ">
+                                    adicionar carrinho 
+                                </button>
+                                </form>
+                                <small class="text-sucess ">100und em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <hr class="mt-3 ">
+                <div class="row pb-4 ">
+                    <div class="col-12 ">
+                        <div class="d-flex d-flex-row-reverse justify-content-center justify-content-md-end ">
+                            <form class="ml-3 d-inline-block ">
+                                <select class="form-select form-select-sm ">
+                                    <option>ordenar pelo nome</option>
+                                    <option>ordenar pelo menor preço</option>
+                                    <option>ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+
+                            <nav class="d-inline-block ">
+                                <ul class="pagination pagination-sm my-0 ">
+                                    <li class="page-item ">
+                                        <button class="page-link ">1</button>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <button class="page-link ">2</button>
+                                    </li>
+
+                                    <li class="page-item disabled ">
+                                        <button class="page-link ">3</button>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <button class="page-link ">4</button>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <button class="page-link ">5</button>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <button class="page-link ">6</button>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-top text-light bg-dark  ">
+        <div class="container ">
+            <div class="row py-3 ">
+                <div class="col-12 col-md-4 text-center text-md-left ">
+                    ©2020 - Flor com Amor ltda ME <br> Rua virtual inexistente, nª938, Mogi das cruzes-sp<br> CNPJ 99.999.999/0001-99
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/privacidade.html " target="_blank " class=" text-decoration-none text-light ">politica de privacidade</a><br>
+
+                    <a href="/termos.html " target="_blank " class="text-decoration-none text-light ">Termos de uso</a><br>
+
+                    <a href="/quemsomos.html " target="_blank " class="text-decoration-none text-light ">quem somos</a><br>
+
+                    <a href="/trocas.html " target="_blank " class="text-decoration-none text-light ">Trocas e Devoluções</a>
+                </div>
+
+
+                <div class="col-12 col-md-4 text-center text-md-right ">
+                    <a href="/contato.html " target="_blank " class="text-decoration-none text-light"> contato pelo site</a><br> Email: <a href="email.email@gmail.com " class="text-decoration-none text-light
+    ">email.email@gmail.com</a><br> telefone: <a href="phone:99999-9999 " class="text-decoration-none text-light">(11) 99999-9999</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="http://127.0.0.1:5500/node_modules/bootstrap/dist/js/bootstrap.bundle.js " crossorigin="anonymous "></script>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript ">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link "));
+                    var head = document.getElementsByTagName("head ")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string " || rel.length == 0 || rel.toLowerCase() == "stylesheet ") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+</body>
+
+</html>

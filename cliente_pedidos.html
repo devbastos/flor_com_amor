@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="pt_br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/icons">
+    <link rel="stylesheet" href="./estilo.css/style.css">
+    <title>Flor com Amor :: Pedidos</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/logo/favicon-16x16.png">
+    <link rel="manifest" href="/img/logo/site.webmanifest">
+    <link rel="mask-icon" href="/img/logo/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/logo/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/logo/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body style="min-width:372px;">
+
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow-sm mb-5 ">
+        <div class="container ">
+            <a class="navbar-brand" href=" "><strong>Flor com Amor</strong></a>
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target=".navbar-collapse"> 
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse ">
+                <ul class="navbar-nav flex-grow-1 ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="/index.html ">Home</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="/contato.html ">contatos</a>
+                    </li>
+                </ul>
+
+                <div class="align-self-end ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="/cadastro.html ">Quero me cadastrar</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="/login.html ">Login</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="/carrinho.html " class="nav-link text-white ">
+                                <svg class="bi " width="24 " height="24 " fill="currentColor ">
+                                <use xlink:href="/bi.svg#cart3 "/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-fill">
+        <div class="container">
+            <h1>Meus Pedidos</h1>
+            <div class="row gx-3">
+                <div class="col-4">
+                    <div class="list-group">
+                        <a href="cliente_dados.html" class="list-group-item list-group-item-action text-dark">
+                            <i class="bi-person fs-6"></i>Dados Pessoais
+                        </a>
+
+                        <a href="cliente_contatos.html" class="list-group-item list-group-item-action text-dark">
+                            <i class="bi-mailbox fs-6"></i>Contatos
+                        </a>
+
+                        <a href="cliente_endereco.html" class="list-group-item list-group-item-action text-dark">
+                            <i class="bi-house-door fs-6"></i>Endereços
+                        </a>
+
+                        <a href="cliente_pedidos.html" class="list-group-item list-group-item-action bg-warning text-light">
+                            <i class="bi-truck fs-6"></i>Pedidos
+                        </a>
+
+                        <a href="cliente_favoritos.html" class="list-group-item list-group-item-action text-dark">
+                            <i class="bi-heart fs-6"></i>Favoritos
+                        </a>
+
+                        <a href="cliente_senha.html" class="list-group-item list-group-item-action text-dark">
+                            <i class="bi-lock fs-6"></i>Alterar Senha
+                        </a>
+
+                        <a href="index.html" class="list-group-item list-group-item-action text-dark">
+                            <i class="bi-door-open fs-6"></i>Sair
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <form class="row mb-3">
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="form-floating">
+                                <select class="form-select">
+                                    <option value="30">Últimos 30 dias </option>
+                                    <option value="60">Últimos 60 dias </option>
+                                    <option value="90">Últimos 90 dias </option>
+                                    <option value="180">Últimos 180 dias </option>
+                                    <option value="360" selected>Últimos 360 dias </option>
+                                    <option value="9999"> Todo o Período </option>
+                                </select>
+                                <label>Período</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select">
+                                        <option value="1" selected>Mais novos Primeiros</option>
+                                        <option value="2" selected>Mais antigos Primeiros</option>
+                                    </select>
+                                <label>Ordenação</label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="accordion" id="divPedidos">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Pedido0000050"> <b>Pedido 0000050</b>
+                                <span class="mx-1">(realizado em 03/07/2020)</span>
+                                </button>
+                            </h2>
+                            <div id="Pedido0000050" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Produto</th>
+                                                <th class="text-end">R$ Unit.</th>
+                                                <th class="text-center">Quantidade</th>
+                                                <th class="text-end">Subtotal</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Banana Prata</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Laranja</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abobora</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maça</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Limão</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor dos Produtos:</th>
+                                                <td class="text-end">R$ 46,65</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor do Frete:</th>
+                                                <td class="text-end">R$ 456,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor a pagar:</th>
+                                                <td class="text-end">R$ 789,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Forma de Pagamento:</th>
+                                                <td class="text-end">Crédito MasterCard 4x</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Pedido0000051"> <b>Pedido 0000051</b>
+                                <span class="mx-1">(realizado em 03/07/2020)</span>
+                                </button>
+                            </h2>
+                            <div id="Pedido0000051" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Produto</th>
+                                                <th class="text-end">R$ Unit.</th>
+                                                <th class="text-center">Quantidade</th>
+                                                <th class="text-end">Subtotal</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Banana Prata</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Laranja</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abobora</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maça</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Limão</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor dos Produtos:</th>
+                                                <td class="text-end">R$ 46,65</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor do Frete:</th>
+                                                <td class="text-end">R$ 456,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor a pagar:</th>
+                                                <td class="text-end">R$ 789,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Forma de Pagamento:</th>
+                                                <td class="text-end">Crédito MasterCard 4x</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Pedido0000052"> <b>Pedido 0000052</b>
+                                <span class="mx-1">(realizado em 03/07/2020)</span>
+                                </button>
+                            </h2>
+                            <div id="Pedido0000052" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Produto</th>
+                                                <th class="text-end">R$ Unit.</th>
+                                                <th class="text-center">Quantidade</th>
+                                                <th class="text-end">Subtotal</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Banana Prata</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Laranja</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abobora</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maça</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Limão</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor dos Produtos:</th>
+                                                <td class="text-end">R$ 46,65</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor do Frete:</th>
+                                                <td class="text-end">R$ 456,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor a pagar:</th>
+                                                <td class="text-end">R$ 789,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Forma de Pagamento:</th>
+                                                <td class="text-end">Crédito MasterCard 4x</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Pedido0000053"> <b>Pedido 0000053</b>
+                                <span class="mx-1">(realizado em 03/07/2020)</span>
+                                </button>
+                            </h2>
+                            <div id="Pedido0000053" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Produto</th>
+                                                <th class="text-end">R$ Unit.</th>
+                                                <th class="text-center">Quantidade</th>
+                                                <th class="text-end">Subtotal</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Banana Prata</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Laranja</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abobora</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maça</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Limão</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor dos Produtos:</th>
+                                                <td class="text-end">R$ 46,65</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor do Frete:</th>
+                                                <td class="text-end">R$ 456,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor a pagar:</th>
+                                                <td class="text-end">R$ 789,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Forma de Pagamento:</th>
+                                                <td class="text-end">Crédito MasterCard 4x</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Pedido0000054"> <b>Pedido 0000054</b>
+                                <span class="mx-1">(realizado em 03/07/2020)</span>
+                                </button>
+                            </h2>
+                            <div id="Pedido0000054" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                                <div class="accordion-body">
+                                    <table class="table" id="accordion-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Produto</th>
+                                                <th class="text-end">R$ Unit.</th>
+                                                <th class="text-center">Quantidade</th>
+                                                <th class="text-end">Subtotal</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Banana Prata</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Laranja</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abobora</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maça</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Limão</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor dos Produtos:</th>
+                                                <td class="text-end">R$ 46,65</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor do Frete:</th>
+                                                <td class="text-end">R$ 456,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor a pagar:</th>
+                                                <td class="text-end">R$ 789,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Forma de Pagamento:</th>
+                                                <td class="text-end">Crédito MasterCard 4x</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Pedido0000055"> <b>Pedido 0000055</b>
+                                <span class="mx-1">(realizado em 03/07/2020)</span>
+                                </button>
+                            </h2>
+                            <div id="Pedido0000055" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                                <div class="accordion-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Produto</th>
+                                                <th class="text-end">R$ Unit.</th>
+                                                <th class="text-center">Quantidade</th>
+                                                <th class="text-end">Subtotal</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Banana Prata</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Laranja</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abobora</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maça</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Limão</td>
+                                                <td class="text-end">R$ 3,21</td>
+                                                <td class="text-center">Qtde - 2</td>
+                                                <td class="text-end">R$ 6</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor dos Produtos:</th>
+                                                <td class="text-end">R$ 46,65</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor do Frete:</th>
+                                                <td class="text-end">R$ 456,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Valor a pagar:</th>
+                                                <td class="text-end">R$ 789,25</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start" colspan="3">Forma de Pagamento:</th>
+                                                <td class="text-end">Crédito MasterCard 4x</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div style="height: 273px;" class="d-block d-md-none"></div>
+    <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+    <div style="height: 129px;" class="d-none d-lg-block"></div>
+
+
+
+    <script src="http://127.0.0.1:5500/node_modules/bootstrap/dist/js/bootstrap.bundle.js" crossorigin="anonymous "></script>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>
