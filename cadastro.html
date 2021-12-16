@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./estilo.css/style.css">
+
     <title>Flor com Amor :: Cadastro</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/img/logo/apple-touch-icon.png">
@@ -73,32 +74,32 @@
                         <fieldset class="row">
                             <legend>Dados pessoais</legend>
                             <div class="mb-3">
-                                <label for="txtnome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="txtnome">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome">
                             </div>
 
                             <div class="col-md-6 col-xl-4 mb-3">
-                                <label for="txtCPF" class="form-label">CPF</label>
+                                <label for="CPF" class="form-label">CPF</label>
                                 <span class="form-text"></span>
-                                <input type="text" class="form-control" placeholder="Somente numeros" id="txtCPF">
+                                <input type="text" class="form-control" placeholder="Somente numeros" id="CPF">
                             </div>
 
                             <div class="col-md-6 col-xl-4 mb-3">
-                                <label for="txtDataNascimento" class="form-label">Data de nascimento</label>
-                                <input type="date" class="form-control" id="txtDataNascimento">
+                                <label for="DataNascimento" class="form-label">Data de nascimento</label>
+                                <input type="date" class="form-control" id="DataNascimento">
                             </div>
                         </fieldset>
 
                         <fieldset>
                             <legend>Contatos</legend>
                             <div class="col-md-8 mb-3">
-                                <label for="txtEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="txtEmail">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="Email">
                             </div>
 
                             <div class="col-md-6 mb-3">
-                                <label for="txtTelefone" class="form-label">Telefone</label>
-                                <input type="tel" class="form-control" placeholder="com DDD, somente numeros" id="txtTelefone">
+                                <label for="Telefone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" placeholder="com DDD, somente numeros" id="Telefone">
                             </div>
                         </fieldset>
                     </div>
@@ -107,9 +108,9 @@
                         <fieldset class="row">
                             <legend>Endereço</legend>
                             <div class="col-md-6 col-lg-4 mb-3">
-                                <label for="txtCEP" class="form-label">CEP</label>
+                                <label for="cep" class="form-label">CEP</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" id="textCEP">
+                                    <input type="text" class="form-control" id="cep">
                                     <span class="input-group-text p-1">
                                         <svg class="bi" width="24" height="24" fill="currentColor">
                                             <use xlink:href="/bi.svg#hourglass-split" />
@@ -117,36 +118,42 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="mb-3 col-md-6 col-lg-8  align-self-end ">
-                                <textarea class="form-control text-muted bg-light" style="height: 68px;"> Digite seu CEP para buscarmos o endereço.</textarea>
+                            <div class="mb-3 col-md-8">
+                                <label for="endereco" class="form-label">Endereço</label>
+                                <input type="text" class="form-control" id="endereco">
                             </div>
 
                             <div class="mb-3 col-md-4">
-                                <label for="txtNumero" class="form-label">Numero</label>
-                                <input type="text" class="form-control" id="txtNumero">
+                                <label for="Numero" class="form-label">Numero</label>
+                                <input type="text" class="form-control" id="Numero">
                             </div>
 
                             <div class="mb-3 col-md-8">
-                                <label for="txtComplemento" class="form-label">Complemento</label>
-                                <input type="text" class="form-control" id="txtComplemento">
+                                <label for="bairro" class="form-label">Bairro</label>
+                                <input type="text" class="form-control" id="bairro">
                             </div>
 
                             <div class="mb-3">
-                                <label for="txtReferencia" class="form-label">Referencia</label>
-                                <input type="text" class="form-control" id="txtReferencia">
+                                <label for="estado" class="form-label">Estado</label>
+                                <input type="text" class="form-control" id="estado">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="cidade" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="cidade">
                             </div>
                         </fieldset>
 
                         <fieldset>
                             <legend> Senha de Acesso</legend>
                             <div class="mb-3">
-                                <label for="txtSenha" class="form-label">Senha</label>
-                                <input type="password" class="form-control" id="txtSenha">
+                                <label for="Senha" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="Senha">
                             </div>
 
                             <div class="mb-3">
-                                <label for="txtConfSenha" class="form-label">Confirmação da Senha</label>
-                                <input type="password" class="form-control" id="txtConfSenha">
+                                <label for="ConfSenha" class="form-label">Confirmação da Senha</label>
+                                <input type="password" class="form-control" id="ConfSenha">
                             </div>
                         </fieldset>
 
@@ -197,7 +204,7 @@
 
 
 
-
+    <script src="/js/scripts.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
 </body>
 
